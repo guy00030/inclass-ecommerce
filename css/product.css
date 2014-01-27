@@ -1,3 +1,17 @@
 @charset "UTF-8";
 /* CSS Document */
 
+.product {
+	background-color: #D6D6D6;
+	padding: 1em;
+	border-radius: 6px;
+}
+
+.flex-img {
+	width: 100%;
+	diaply: block;
+}
+
+.space-none {
+	margin-bottom: 0;
+}

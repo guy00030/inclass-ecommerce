@@ -9,5 +9,17 @@ title: dinosaurs
 	</div>
 
 	<div class="unit unit-s-1 unit-m-1-2 unit-1-2-3">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, labore!</p>
+<p>All the Dinos that ever existed!</p>
 </div>
+</div>
+
+<ul>
+	{% for dino in site.pages %}
+	{% if dino.category == 'dinosaur' %}
+	<li>
+	<img src="{{site.base.url}}/images/{{dino.image}}" alt="">
+	{{dino.name}}
+	</li>
+	{% endif %}
+	{% endfor %}
+</ul>

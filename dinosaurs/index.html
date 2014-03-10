@@ -17,8 +17,10 @@ title: dinosaurs
 	{% for dino in site.pages %}
 	{% if dino.category == 'dinosaur' %}
 	<li>
-	<img src="{{site.base.url}}/images/{{dino.image}}" alt="">
-	{{dino.name}}
+		<a href="{{site.base.url}}{{dino.url}}">
+			<img src="{{site.base.url}}/images/{{dino.image}}" alt="">
+			{{dino.name}}
+		</a>
 	</li>
 	{% endif %}
 	{% endfor %}
